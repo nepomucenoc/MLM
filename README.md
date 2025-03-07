@@ -19,16 +19,13 @@ The code requires the following Python libraries:
 
 You can install the dependencies using `pip`:
 
-```bash
-pip install transformers torch
-
+'pip install transformers torch'
 
 ### Code Overview
 1. Load Pre-trained BERT Model and Tokenizer: We load the pre-trained bert-base-uncased model and its tokenizer from Hugging Face. The model is pre-trained for MLM, so it can predict masked words in a sentence.
 
 2. Prepare Input Text: We provide a sentence with a word replaced by the [MASK] token. For example:
-```python
-text = "The quick brown fox jumps over the [MASK] dog."
+'text = "The quick brown fox jumps over the [MASK] dog."'
 
 3. Tokenization: The input text is tokenized into tokens that the BERT model can understand. The tokenizer converts the [MASK] token into its corresponding token ID.
 
